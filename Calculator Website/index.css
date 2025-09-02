@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: darkslategrey;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.keys {
+    border: 0;
+    outline: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: -0.4rem -0.4rem 0.5rem rgba(255, 255, 255, 0.15), 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 1.4rem;
+    color:#fff;
+    cursor: pointer;
+    margin: 0.7rem;
+}
+
+.AC {
+    background: #853b3b;
+    /* margin-left: 200px; */
+}
+
+.CE {
+    background: grey;
+}
+
+.equal {
+    background: grey;
+}
+
+#wide-key {
+    width: 9.7rem;
+}
+
+#operator {
+    background-color: rgb(49, 71, 71);
+}
+
+#ultra-wide-key {
+    width: 15.4rem;
+    font-size: 1rem;
+    display: inline-block;
+    align-content: center;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.keys:active, 
+#wide-key:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 1) inset;
+    content: "";
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-align: right;
+    flex: 1;
+    background-color: transparent;
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+
+@media only screen and ((max-width: 720px) or (max-height:600px)) {
+    
+    .calculator {
+        background: darkslategrey;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .keys {
+        border: 0;
+        outline: 0;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: -0.2rem -0.2rem 0.25rem rgba(255, 255, 255, 0.15), 0.2rem 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+        background: transparent;
+        font-size: 0.7rem;
+        color:#fff;
+        cursor: pointer;
+        margin: 0.35rem;
+    }
+
+    .AC {
+        background: #853b3b;
+    }
+
+    .CE {
+        background: grey;
+    }
+
+    .equal {
+        background: grey;
+    }
+
+    #wide-key {
+        width: 4.9rem;
+    }
+
+    #operator {
+        background-color: rgb(49, 71, 71);
+    }
+
+    .keys:active, 
+    #wide-key:active {
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 1) inset;
+        content: "";
+        opacity: 0.3;
+        z-index: 1;
+    }
+
+    .display {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0.5rem 0.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: white;
+        text-align: right;
+        flex: 1;
+        background-color: transparent;
+        box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.2) inset;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <title>Scientific Calculator</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="calculator">
+
+        <div class="display">0</div>
+        
+        <div class="calculator-keys">
+          <div>
+            
+            <!-- <div class="keys" id="ultra-wide-key">
+              Simple Scientific Calculator <br />
+              <small>(All trig. inputs are in radians)</small>
+            </div> -->
+            <button class="keys" id="operator" data-action="square-root">&radic;</button>
+            <button class="keys" id="operator" data-action="cubic-root"><sup>3</sup>&radic;</button>
+            <button class="keys" id="operator" data-action="percent">%</button>
+            <button class="keys AC" id="wide-key" data-action="clear">AC</button>
+            <button class="keys CE" data-action="clear-entry">CE</button>
+            <button class="keys" id="operator" data-action="divide">&divide;</button>
+          </div>
+          
+          
+          <div>
+            <button class="keys" id="operator" data-action="sin">sin</button>
+            <button class="keys" id="operator" data-action="cos">cos</button>
+            <button class="keys" id="operator" data-action="tan">tan</button>
+            <button class="keys">7</button>
+            <button class="keys">8</button>
+            <button class="keys">9</button>
+            <button class="keys" id="operator" data-action="multiply">&times;</button>
+          </div>
+          
+          <div>
+            <button class="keys" id="operator" data-action="log10">log<sub>10</sub></button>
+            <button class="keys" id="operator" data-action="open-parenthesis">(</button>
+            <button class="keys" id="operator" data-action="close-parenthesis">)</button>
+            <button class="keys">4</button>
+            <button class="keys">5</button>
+            <button class="keys">6</button>
+            <button class="keys" id="operator" data-action="subtract">-</button>
+          </div>
+          
+          <div>
+            <button class="keys" id="operator" data-action="modulo">mod</button>
+            <button class="keys" id="operator" data-action="degrees">deg</sup></button>
+            <button class="keys" id="operator" data-action="power">x<sup>^</sup></button>
+            <button class="keys">1</button>
+            <button class="keys">2</button>
+            <button class="keys">3</button>
+            <button class="keys" id="operator" data-action="add">+</button>
+          </div>
+          
+          <div>
+            <button class="keys" id="operator" data-action="exp">exp</button>
+            <button class="keys" id="operator" data-action="factorial">!</button>
+            <button class="keys" id="operator" data-action="pi">&pi;</button>
+            <button class="keys" id="wide-key">0</button>
+            <button class="keys" data-action="decimal-point">.</button>
+            <button class="keys equal" data-action="calculate">=</button>
+          </div>
+        </div>
+        
+      </div>
+  </div>
+<!-- 
+  <p id="test"></p>
+
+  <input id="input" value="" />
+
+  <button onclick="onClick()">Click me</button> -->
+  
+</body>
+
+<script src="./index.js"></script>
+</html>
